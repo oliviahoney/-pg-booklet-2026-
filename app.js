@@ -132,7 +132,7 @@ function renderHome(){
           <input id="nameInput" placeholder="Enter your name" value="${escapeHtml(state.name)}" />
         </div>
       </div>
-      <div style="margin-top:10px" class="small">Date is automatic and cannot be edited.</div>
+     
     </div>
 
     <div class="card">
@@ -225,8 +225,8 @@ function renderCategory(catId){
     qEl.innerHTML = `
       <div class="q-title">Q${i+1}</div>
       <div class="choices">
-        <div class="choice ${a==="understood"?"active":""}" data-i="${i}" data-v="understood">懂了</div>
-        <div class="choice ${a==="notyet"?"active":""}" data-i="${i}" data-v="notyet">没完全懂</div>
+        <div class="choice ${a==="understood"?"active":""}" data-i="${i}" data-v="understood">Got it</div>
+        <div class="choice ${a==="notyet"?"active":""}" data-i="${i}" data-v="notyet">Not fully clear</div>
       </div>
     `;
     qWrap.appendChild(qEl);
