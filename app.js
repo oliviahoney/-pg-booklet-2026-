@@ -254,7 +254,7 @@ function renderCategory(catId){
   completeBtn.disabled = !allUnderstood;
 
   if(!allUnderstood){
-    hint.textContent = "Complete is locked until all answers are “懂了”.";
+    hint.textContent = "Complete is locked until all answers are “Got it”.";
   } else if(alreadyCompletedThisWeek){
     hint.textContent = "You already completed this category this week. Completing again won’t increase progress.";
   } else {
